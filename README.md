@@ -170,34 +170,18 @@ Confusion matrices: `outputs/figures/cm_*.png`.
 
 ## 10. Completed / Incomplete Features
 
-### ✅ Minimum Deliverables
-
-- [x] **Working notebook and source code** — complete workflow in `notebooks/01_student_outcome_workflow.ipynb` and `src/`
-- [x] **Reproducible preprocessing and modelling code** — runs end-to-end with `python -m src.train` without manual steps
-- [x] **Evaluation output** — model comparison table, per-class metrics, macro-F1, confusion matrices in `outputs/`
-- [x] **Sample prediction demonstration** — `python -m src.predict` → `outputs/sample_predictions.csv`
-- [x] **README.md** — dataset source, setup, run instructions, preprocessing decisions, train/test strategy, prediction-time assumptions, models, results, assumptions, limitations, completed/incomplete features
-- [x] **requirements.txt** — all dependencies pinned
-- [x] **.gitignore** — models, cache, virtual env, secrets excluded
-
-### ✅ Quality Checks
-
-- [x] Train and test records are strictly separated (stratified 80/20 split, no overlap)
-- [x] Encoders, scalers, imputers are fitted on training data only — inside `sklearn.Pipeline`, including within each CV fold
-- [x] Prohibited semester-performance variables (`Curricular units 1st/2nd sem (...)`) are excluded via explicit allow-list; unit test asserts this
-- [x] Model selected by CV macro-F1 on training data before any test-set scoring; test set scored exactly once
-- [x] All model scores, predictions and charts are produced by running the code on the supplied dataset — none fabricated
-- [x] Dataset values unchanged — only header whitespace stripped on load; documented in section 4
-
-### ✅ Bonus Opportunities
-
-- [x] **Cross-validation** — 5-fold stratified `GridSearchCV` for hyperparameter tuning
-- [x] **Systematic hyperparameter tuning** — per-model grids (LR: C, penalty; RF: n_estimators, min_samples_leaf)
-- [x] **Additional classification metrics** — per-class precision, recall, F1; confusion matrices; permutation feature importance
-- [x] **Unit tests** — leakage check, split integrity, pipeline reproducibility (`tests/test_pipeline.py`)
-- [ ] Model explainability (SHAP)
-- [ ] Inference API
-- [ ] Interactive demo
+- [x] Data inspection and EDA
+- [x] Leakage-safe sklearn Pipeline
+- [x] Stratified 80/20 train/test split
+- [x] ≥ 2 models compared (4 total including baseline)
+- [x] Per-class metrics (precision, recall, F1), macro-F1, confusion matrices
+- [x] Sample predictions with class probabilities
+- [x] Feature importance (permutation-based)
+- [x] Unit tests — leakage, split integrity, pipeline checks (bonus)
+- [x] Cross-validated grid search for hyper-parameter tuning (bonus)
+- [ ] SHAP value explanations
+- [ ] Inference REST API
+- [ ] Docker containerisation
 
 ---
 
