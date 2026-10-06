@@ -1,0 +1,12 @@
+Random Forest (balanced)
+best params: {'clf__max_depth': None, 'clf__min_samples_leaf': 5}
+
+              precision    recall  f1-score   support
+
+     Dropout      0.601     0.637     0.619       284
+    Enrolled      0.312     0.340     0.325       159
+    Graduate      0.706     0.656     0.680       442
+
+    accuracy                          0.593       885
+   macro avg      0.540     0.544     0.541       885
+weighted avg      0.601     0.593     0.597       885

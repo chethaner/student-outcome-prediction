@@ -1,0 +1,12 @@
+Logistic Regression (balanced)
+best params: {'clf__C': 0.1}
+
+              precision    recall  f1-score   support
+
+     Dropout      0.696     0.581     0.633       284
+    Enrolled      0.308     0.541     0.393       159
+    Graduate      0.718     0.600     0.654       442
+
+    accuracy                          0.583       885
+   macro avg      0.574     0.574     0.560       885
+weighted avg      0.637     0.583     0.600       885

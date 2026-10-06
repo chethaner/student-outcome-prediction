@@ -1,0 +1,23 @@
+{
+  "selected_model": "Random Forest (balanced)",
+  "selection_rule": "highest 5-fold CV macro-F1 on training set",
+  "best_params": {
+    "Dummy (most frequent)": "{}",
+    "Logistic Regression (unweighted)": "{'clf__C': 1.0}",
+    "Logistic Regression (balanced)": "{'clf__C': 0.1}",
+    "Random Forest (balanced)": "{'clf__max_depth': None, 'clf__min_samples_leaf': 5}"
+  },
+  "seed": 42,
+  "classes": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "n_train": 3539,
+  "n_test": 885,
+  "n_features": 24,
+  "python": "3.9.0",
+  "sklearn": "1.6.1",
+  "pandas": "2.3.1",
+  "numpy": "2.0.2"
+}

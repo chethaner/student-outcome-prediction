@@ -1,0 +1,7 @@
+,Course,Age at enrollment,Admission grade,Gender,Scholarship holder,Debtor,actual,predicted,P(Dropout),P(Enrolled),P(Graduate),correct
+4055,9085,28,110.0,0,0,0,Dropout,Dropout,0.559,0.261,0.18,True
+3003,9556,19,119.0,0,1,0,Dropout,Graduate,0.156,0.193,0.651,False
+3653,9085,20,140.0,0,0,0,Enrolled,Enrolled,0.171,0.538,0.291,True
+186,9238,21,126.6,0,0,1,Enrolled,Dropout,0.657,0.18,0.164,False
+2271,9070,23,178.0,1,1,0,Graduate,Graduate,0.219,0.311,0.47,True
+168,9500,29,130.0,0,0,0,Graduate,Dropout,0.494,0.24,0.266,False

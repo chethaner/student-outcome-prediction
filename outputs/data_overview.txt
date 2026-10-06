@@ -1,0 +1,108 @@
+Rows: 4424
+Columns: 37 (36 inputs + Target expected)
+
+Column dtypes:
+Marital status                                      int64
+Application mode                                    int64
+Application order                                   int64
+Course                                              int64
+Daytime/evening attendance                          int64
+Previous qualification                              int64
+Previous qualification (grade)                    float64
+Nacionality                                         int64
+Mother's qualification                              int64
+Father's qualification                              int64
+Mother's occupation                                 int64
+Father's occupation                                 int64
+Admission grade                                   float64
+Displaced                                           int64
+Educational special needs                           int64
+Debtor                                              int64
+Tuition fees up to date                             int64
+Gender                                              int64
+Scholarship holder                                  int64
+Age at enrollment                                   int64
+International                                       int64
+Curricular units 1st sem (credited)                 int64
+Curricular units 1st sem (enrolled)                 int64
+Curricular units 1st sem (evaluations)              int64
+Curricular units 1st sem (approved)                 int64
+Curricular units 1st sem (grade)                  float64
+Curricular units 1st sem (without evaluations)      int64
+Curricular units 2nd sem (credited)                 int64
+Curricular units 2nd sem (enrolled)                 int64
+Curricular units 2nd sem (evaluations)              int64
+Curricular units 2nd sem (approved)                 int64
+Curricular units 2nd sem (grade)                  float64
+Curricular units 2nd sem (without evaluations)      int64
+Unemployment rate                                 float64
+Inflation rate                                    float64
+GDP                                               float64
+Target                                             object
+
+Target classes:
+          count  share_%
+Target                  
+Graduate   2209    49.93
+Dropout    1421    32.12
+Enrolled    794    17.95
+
+Missing values (total): 0
+Duplicate rows: 0
+
+Prohibited semester-performance columns found: 12 (expected 12) -> excluded from primary model:
+  - Curricular units 1st sem (credited)
+  - Curricular units 1st sem (enrolled)
+  - Curricular units 1st sem (evaluations)
+  - Curricular units 1st sem (approved)
+  - Curricular units 1st sem (grade)
+  - Curricular units 1st sem (without evaluations)
+  - Curricular units 2nd sem (credited)
+  - Curricular units 2nd sem (enrolled)
+  - Curricular units 2nd sem (evaluations)
+  - Curricular units 2nd sem (approved)
+  - Curricular units 2nd sem (grade)
+  - Curricular units 2nd sem (without evaluations)
+
+Permitted numeric features:
+                                 count    mean    std    min    25%     50%     75%     max
+Application order               4424.0    1.73   1.31   0.00    1.0    1.00    2.00    9.00
+Previous qualification (grade)  4424.0  132.61  13.19  95.00  125.0  133.10  140.00  190.00
+Admission grade                 4424.0  126.98  14.48  95.00  117.9  126.10  134.80  190.00
+Age at enrollment               4424.0   23.27   7.59  17.00   19.0   20.00   25.00   70.00
+Unemployment rate               4424.0   11.57   2.66   7.60    9.4   11.10   13.90   16.20
+Inflation rate                  4424.0    1.23   1.38  -0.80    0.3    1.40    2.60    3.70
+GDP                             4424.0    0.00   2.27  -4.06   -1.7    0.32    1.79    3.51
+
+Distinct values per permitted binary/categorical feature:
+Daytime/evening attendance     2
+Displaced                      2
+Educational special needs      2
+Debtor                         2
+Tuition fees up to date        2
+Gender                         2
+Scholarship holder             2
+International                  2
+Marital status                 6
+Application mode              18
+Course                        17
+Previous qualification        17
+Nacionality                   21
+Mother's qualification        29
+Father's qualification        34
+Mother's occupation           32
+Father's occupation           46
+
+Data-quality checks:
+  - Previous qualification (grade): min=95.0, max=190.0, zeros=0
+  - Admission grade: min=95.0, max=190.0, zeros=0
+  - Age at enrollment: min=17, max=70
+  - Marital status: 6 levels, 2 levels with <10 rows (pooled by the encoder)
+  - Application mode: 18 levels, 4 levels with <10 rows (pooled by the encoder)
+  - Course: 17 levels, 0 levels with <10 rows (pooled by the encoder)
+  - Previous qualification: 17 levels, 7 levels with <10 rows (pooled by the encoder)
+  - Nacionality: 21 levels, 16 levels with <10 rows (pooled by the encoder)
+  - Mother's qualification: 29 levels, 19 levels with <10 rows (pooled by the encoder)
+  - Father's qualification: 34 levels, 22 levels with <10 rows (pooled by the encoder)
+  - Mother's occupation: 32 levels, 18 levels with <10 rows (pooled by the encoder)
+  - Father's occupation: 46 levels, 32 levels with <10 rows (pooled by the encoder)

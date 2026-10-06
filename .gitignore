@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+# Environments & secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+*.key
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Large/regenerable artefacts (re-create with: python -m src.train)
+models/*.joblib
+models/*.pkl
